@@ -1,10 +1,12 @@
 import React from 'react';
 import {
+  Alert,
   Image,
   Platform,
   ScrollView,
   StyleSheet,
   Text,
+  Touchable,
   TouchableOpacity,
   View,
 } from 'react-native';
@@ -53,6 +55,8 @@ export default class HomeScreen extends React.Component {
           </View>
         </ScrollView>
 
+        
+
         <View style={styles.tabBarInfoContainer}>
           <Text style={styles.tabBarInfoText}>This is a tab bar. You can edit it in:</Text>
 
@@ -62,6 +66,10 @@ export default class HomeScreen extends React.Component {
         </View>
       </View>
     );
+  }
+
+  _purPur() {
+    Alert.alert('Мррр-ррр-рр')
   }
 
   _maybeRenderDevelopmentModeWarning() {
